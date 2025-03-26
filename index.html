@@ -16,38 +16,45 @@
         }
         .image-container {
             position: relative;
+            width: 100vw; /* Ширина на весь экран */
+            height: 100vh; /* Высота на весь экран */
         }
         .image-container img {
-            max-width: 100%;
-            height: auto;
+            width: 100%; /* Картинка на всю ширину */
+            height: 100%; /* Картинка на всю высоту */
+            object-fit: cover; /* Сохранение пропорций */
             display: block;
         }
         .link {
             position: absolute;
             display: block;
-            background-color: rgba(255, 0, 0, 0.2); /* Красная подсветка для проверки */
+            background-color: rgba(255, 0, 0, 0.3); /* Временная подсветка для проверки */
             cursor: pointer;
         }
         /* Ссылка на "BUY" */
         .buy-link {
-            top: 60%;    /* Опускаем ниже */
-            left: 27%;   /* Сдвигаем ближе к центру */
-            width: 16%;  /* Устанавливаем ширину */
-            height: 15%; /* Устанавливаем высоту */
+            top: 50%; /* Центр по вертикали */
+            left: calc(50% - 4cm - 8%); /* Сдвиг влево на 4 см + половина ширины ссылки */
+            width: 8%; /* Ширина ссылки */
+            height: 10%; /* Высота ссылки */
+            transform: translateY(-50%); /* Центрирование по вертикали */
         }
         /* Ссылка на "JOB" */
         .job-link {
-            top: 90%;    /* Опускаем ниже */
-            left: 50%;   /* Сдвигаем ближе к центру */
-            width: 15%;  /* Устанавливаем ширину */
-            height: 9%; /* Устанавливаем высоту */
+            top: 50%; /* Центр по вертикали */
+            left: calc(50% + 4cm); /* Сдвиг вправо на 4 см */
+            width: 8%; /* Ширина ссылки */
+            height: 10%; /* Высота ссылки */
+            transform: translateY(-50%); /* Центрирование по вертикали */
         }
     </style>
 </head>
 <body>
     <div class="image-container">
         <img src="./визитка.png" alt="Clickable Image">
+        <!-- Ссылка на BUY -->
         <a href="https://t.me/genSSA_bot" class="link buy-link" target="_blank"></a>
+        <!-- Ссылка на JOB -->
         <a href="https://t.me/MrGenka" class="link job-link" target="_blank"></a>
     </div>
 </body>
