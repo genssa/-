@@ -71,4 +71,46 @@
                 top: 75%; /* Сдвигаем вниз для планшетов */
                 left: 10%; /* Сдвигаем влево */
             }
-            .job-link
+            .job-link {
+                top: 75%; /* Сдвигаем вниз для планшетов */
+                left: 50%; /* Сдвигаем вправо */
+            }
+            .genesis-link {
+                top: 60%; /* Сдвигаем вниз для планшетов */
+            }
+        }
+
+        /* Адаптивность для телефонов */
+        @media (max-width: 480px) {
+            .buy-link, .job-link, .genesis-link {
+                width: 80%; /* Ссылки занимают почти всю ширину экрана */
+                height: 8%; /* Увеличиваем высоту ссылок */
+            }
+            .buy-link {
+                top: 80%; /* Сдвигаем вниз для телефонов */
+                left: 10%; /* Сдвигаем влево */
+            }
+            .job-link {
+                top: 85%; /* Сдвигаем вниз для телефонов */
+                left: 10%; /* Сдвигаем влево */
+            }
+            .genesis-link {
+                top: 65%; /* Сдвигаем вниз для телефонов */
+                left: 10%; /* Сдвигаем влево */
+                transform: none; /* Убираем центрирование */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="./визитка.png" alt="Clickable Image">
+        <!-- Ссылка на BUY -->
+        <a href="https://t.me/genSSA_bot" class="link buy-link" target="_blank"></a>
+        <!-- Ссылка на JOB -->
+        <a href="https://t.me/MrGenka" class="link job-link" target="_blank"></a>
+        <!-- Ссылка на genesisworld.link -->
+        <a href="https://genesisworld.link" class="link genesis-link" target="_blank"></a>
+    </div>
+</body>
+</html>
