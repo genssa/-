@@ -30,18 +30,14 @@
             display: block;
             cursor: pointer;
             text-decoration: none; /* Убираем подчеркивание */
-            color: white; /* Цвет текста */
-            background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный фон */
+            color: black; /* Цвет текста */
+            background-color: transparent; /* Прозрачный фон */
             text-align: center; /* Выравнивание текста */
             border-radius: 5px; /* Скругленные углы */
-            transition: background-color 0.3s ease; /* Плавный переход для подсветки */
-        }
-        .link:hover {
-            background-color: rgba(0, 0, 0, 1); /* Подсветка при наведении */
         }
         /* Ссылка на "BUY" */
         .buy-link {
-            top: calc(50% + 7.5cm); /* Центр по вертикали + 7.5 см */
+            top: calc(50% + 7cm); /* Центр по вертикали + 7 см */
             left: calc(50% - 6cm - 3cm); /* Сдвиг влево на половину ширины ссылки + половину расстояния */
             width: 6cm; /* Ширина ссылки */
             height: 2cm; /* Высота ссылки */
@@ -49,13 +45,13 @@
         }
         /* Ссылка на "JOB" */
         .job-link {
-            top: calc(50% + 7.5cm); /* Центр по вертикали + 7.5 см */
+            top: calc(50% + 7cm); /* Центр по вертикали + 7 см */
             left: calc(50% + 3cm); /* Сдвиг вправо на половину расстояния */
             width: 6cm; /* Ширина ссылки */
             height: 2cm; /* Высота ссылки */
             line-height: 2cm; /* Центрирование текста по вертикали */
         }
-        /* Ссылка на genesisworl.link */
+        /* Ссылка на genesisworld.link */
         .genesis-link {
             top: calc(50% + 2cm); /* Центр по вертикали + 2 см */
             left: 50%; /* Центр по горизонтали */
@@ -64,6 +60,7 @@
             height: 4cm; /* Высота ссылки */
             font-size: 1.5rem; /* Размер текста */
             line-height: 4cm; /* Центрирование текста по вертикали */
+            font-weight: bold; /* Жирный текст */
         }
     </style>
 </head>
@@ -74,7 +71,7 @@
         <a href="https://t.me/genSSA_bot" class="link buy-link" target="_blank">BUY</a>
         <!-- Ссылка на JOB -->
         <a href="https://t.me/MrGenka" class="link job-link" target="_blank">JOB</a>
-        <!-- Ссылка на genesisworl.link -->
+        <!-- Ссылка на genesisworld.link -->
         <a href="https://genesisworl.link" class="link genesis-link" target="_blank">genesisworl.link</a>
     </div>
 </body>
