@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>визитка.png</title>
+    <title>Clickable Image</title>
     <style>
         body {
             margin: 0;
@@ -14,13 +14,41 @@
             height: 100vh;
             background-color: #f5f5f5;
         }
-        img {
+        .image-container {
+            position: relative;
+        }
+        .image-container img {
             max-width: 100%;
-            max-height: 100%;
+            height: auto;
+            display: block;
+        }
+        .link {
+            position: absolute;
+            display: block;
+        }
+        /* Ссылка на "BUY" */
+        .buy-link {
+            top: 80%; /* Позиция сверху */
+            left: 20%; /* Позиция слева */
+            width: 10%; /* Ширина области */
+            height: 10%; /* Высота области */
+        }
+        /* Ссылка на "JOB" */
+        .job-link {
+            top: 80%; /* Позиция сверху */
+            left: 70%; /* Позиция слева */
+            width: 10%; /* Ширина области */
+            height: 10%; /* Высота области */
         }
     </style>
 </head>
 <body>
-    <img src="./визитка.png" alt="My Image">
+    <div class="image-container">
+        <!-- Ваша картинка -->
+        <img src="./визитка.png" alt="Clickable Image">
+        <!-- Ссылки -->
+        <a href="https://t.me/genSSA_bot" class="link buy-link" target="_blank"></a>
+        <a href="https://t.me/MrGenka" class="link job-link" target="_blank"></a>
+    </div>
 </body>
 </html>
