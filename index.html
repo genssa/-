@@ -13,6 +13,7 @@
             align-items: center;
             height: 100vh;
             background-color: #f5f5f5;
+            overflow: hidden; /* Убираем прокрутку */
         }
         .image-container {
             position: relative;
@@ -22,7 +23,7 @@
         .image-container img {
             width: 100%; /* Растягиваем картинку на всю ширину */
             height: 100%; /* Растягиваем картинку на всю высоту */
-            object-fit: cover; /* Сохраняем пропорции */
+            object-fit: cover; /* Сохраняем пропорции, чтобы картинка не обрезалась */
             display: block;
         }
         .link {
@@ -32,18 +33,22 @@
             text-decoration: none; /* Убираем подчеркивание */
             background-color: transparent; /* Прозрачный фон */
             border: none; /* Убираем границы */
+            transition: background-color 0.3s ease; /* Плавный переход для подсветки */
+        }
+        .link:hover {
+            background-color: rgba(0, 0, 0, 0.3); /* Полупрозрачный черный фон при наведении */
         }
         /* Ссылка на "BUY" */
         .buy-link {
             top: 70%; /* Расположение ссылки относительно высоты экрана */
-            left: 25%; /* Расположение ссылки относительно ширины экрана */
+            left: 20%; /* Расположение ссылки относительно ширины экрана */
             width: 15%; /* Ширина ссылки относительно экрана */
             height: 5%; /* Высота ссылки относительно экрана */
         }
         /* Ссылка на "JOB" */
         .job-link {
             top: 70%; /* Расположение ссылки относительно высоты экрана */
-            left: 60%; /* Расположение ссылки относительно ширины экрана */
+            left: 65%; /* Расположение ссылки относительно ширины экрана */
             width: 15%; /* Ширина ссылки относительно экрана */
             height: 5%; /* Высота ссылки относительно экрана */
         }
@@ -66,46 +71,4 @@
                 top: 75%; /* Сдвигаем вниз для планшетов */
                 left: 10%; /* Сдвигаем влево */
             }
-            .job-link {
-                top: 75%; /* Сдвигаем вниз для планшетов */
-                left: 50%; /* Сдвигаем вправо */
-            }
-            .genesis-link {
-                top: 60%; /* Сдвигаем вниз для планшетов */
-            }
-        }
-
-        /* Адаптивность для телефонов */
-        @media (max-width: 480px) {
-            .buy-link, .job-link, .genesis-link {
-                width: 80%; /* Ссылки занимают почти всю ширину экрана */
-                height: 8%; /* Увеличиваем высоту ссылок */
-            }
-            .buy-link {
-                top: 80%; /* Сдвигаем вниз для телефонов */
-                left: 10%; /* Сдвигаем влево */
-            }
-            .job-link {
-                top: 85%; /* Сдвигаем вниз для телефонов */
-                left: 10%; /* Сдвигаем влево */
-            }
-            .genesis-link {
-                top: 65%; /* Сдвигаем вниз для телефонов */
-                left: 10%; /* Сдвигаем влево */
-                transform: none; /* Убираем центрирование */
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="image-container">
-        <img src="./визитка.png" alt="Clickable Image">
-        <!-- Ссылка на BUY -->
-        <a href="https://t.me/genSSA_bot" class="link buy-link" target="_blank"></a>
-        <!-- Ссылка на JOB -->
-        <a href="https://t.me/MrGenka" class="link job-link" target="_blank"></a>
-        <!-- Ссылка на genesisworld.link -->
-        <a href="https://genesisworld.link" class="link genesis-link" target="_blank"></a>
-    </div>
-</body>
-</html>
+            .job-link
