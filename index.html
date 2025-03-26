@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Clickable Links</title>
     <style>
+        /* Стили для всего документа */
         body {
             margin: 0;
             padding: 0;
@@ -15,17 +16,23 @@
             background-color: #f5f5f5;
             overflow: hidden; /* Убираем прокрутку */
         }
+
+        /* Контейнер для изображения */
         .image-container {
             position: relative;
             width: 100vw; /* Картинка на всю ширину экрана */
             height: 100vh; /* Картинка на всю высоту экрана */
         }
+
+        /* Изображение */
         .image-container img {
             width: 100%; /* Растягиваем картинку на всю ширину */
             height: 100%; /* Растягиваем картинку на всю высоту */
             object-fit: contain; /* Сохраняем пропорции, чтобы картинка полностью помещалась в экран */
             display: block;
         }
+
+        /* Общие стили для ссылок */
         .link {
             position: absolute;
             display: block;
@@ -35,9 +42,12 @@
             border: none; /* Убираем границы */
             transition: background-color 0.3s ease; /* Плавный переход для подсветки */
         }
+
+        /* Подсветка ссылок при наведении */
         .link:hover {
             background-color: rgba(0, 0, 0, 0.3); /* Полупрозрачный черный фон при наведении */
         }
+
         /* Ссылка на "BUY" */
         .buy-link {
             top: 70%; /* Расположение ссылки относительно высоты экрана */
@@ -45,6 +55,7 @@
             width: 15%; /* Ширина ссылки относительно экрана */
             height: 5%; /* Высота ссылки относительно экрана */
         }
+
         /* Ссылка на "JOB" */
         .job-link {
             top: 70%; /* Расположение ссылки относительно высоты экрана */
@@ -52,6 +63,7 @@
             width: 15%; /* Ширина ссылки относительно экрана */
             height: 5%; /* Высота ссылки относительно экрана */
         }
+
         /* Ссылка на genesisworld.link */
         .genesis-link {
             top: 55%; /* Расположение ссылки относительно высоты экрана */
@@ -104,7 +116,7 @@
 </head>
 <body>
     <div class="image-container">
-        <!-- Заглушка для картинки -->
+        <!-- Картинка -->
         <img src="https://via.placeholder.com/1920x1080" alt="Clickable Image">
         <!-- Ссылка на BUY -->
         <a href="https://t.me/genSSA_bot" class="link buy-link" target="_blank"></a>
