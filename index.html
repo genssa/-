@@ -30,10 +30,10 @@
             display: block;
             cursor: pointer;
             text-decoration: none; /* Убираем подчеркивание */
-            color: black; /* Цвет текста */
             background-color: transparent; /* Прозрачный фон */
-            text-align: center; /* Выравнивание текста */
-            border-radius: 5px; /* Скругленные углы */
+            border: none; /* Убираем границы */
+            width: 0; /* Убираем видимость ширины */
+            height: 0; /* Убираем видимость высоты */
         }
         /* Ссылка на "BUY" */
         .buy-link {
@@ -41,7 +41,6 @@
             left: calc(50% - 6cm - 3cm); /* Сдвиг влево на половину ширины ссылки + половину расстояния */
             width: 6cm; /* Ширина ссылки */
             height: 2cm; /* Высота ссылки */
-            line-height: 2cm; /* Центрирование текста по вертикали */
         }
         /* Ссылка на "JOB" */
         .job-link {
@@ -49,7 +48,6 @@
             left: calc(50% + 3cm); /* Сдвиг вправо на половину расстояния */
             width: 6cm; /* Ширина ссылки */
             height: 2cm; /* Высота ссылки */
-            line-height: 2cm; /* Центрирование текста по вертикали */
         }
         /* Ссылка на genesisworld.link */
         .genesis-link {
@@ -58,9 +56,6 @@
             transform: translateX(-50%); /* Сдвиг для центрирования */
             width: 10cm; /* Ширина ссылки */
             height: 4cm; /* Высота ссылки */
-            font-size: 1.5rem; /* Размер текста */
-            line-height: 4cm; /* Центрирование текста по вертикали */
-            font-weight: bold; /* Жирный текст */
         }
     </style>
 </head>
@@ -68,11 +63,11 @@
     <div class="image-container">
         <img src="./визитка.png" alt="Clickable Image">
         <!-- Ссылка на BUY -->
-        <a href="https://t.me/genSSA_bot" class="link buy-link" target="_blank">BUY</a>
+        <a href="https://t.me/genSSA_bot" class="link buy-link" target="_blank"></a>
         <!-- Ссылка на JOB -->
-        <a href="https://t.me/MrGenka" class="link job-link" target="_blank">JOB</a>
+        <a href="https://t.me/MrGenka" class="link job-link" target="_blank"></a>
         <!-- Ссылка на genesisworld.link -->
-        <a href="https://genesisworld.link" class="link genesis-link" target="_blank">genesisworld.link</a>
+        <a href="https://genesisworld.link" class="link genesis-link" target="_blank"></a>
     </div>
 </body>
 </html>
