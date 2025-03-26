@@ -16,12 +16,10 @@
         }
         .image-container {
             position: relative;
-            width: 800px; /* Фиксированная ширина изображения */
-            height: 500px; /* Фиксированная высота изображения */
         }
         .image-container img {
-            width: 100%; /* Изображение занимает весь контейнер */
-            height: 100%; /* Изображение занимает весь контейнер */
+            max-width: 100%;
+            height: auto;
             display: block;
         }
         .link {
@@ -32,15 +30,15 @@
         }
         /* Ссылка на "BUY" */
         .buy-link {
-            bottom: 19px;     /* 0.5 см от низа */
-            left: calc(8cm + 150px); /* 8 см от левого края + 150px */
+            bottom: 0.5cm;    /* 0.5 см от низа */
+            left: 8cm;        /* 8 см от левого края */
             width: 4cm;       /* ширина 4 см */
             height: 1cm;      /* высота 1 см */
         }
         /* Ссылка на "JOB" */
         .job-link {
-            bottom: 11px;     /* 0.3 см от низа */
-            right: calc(7cm - 150px); /* 7 см от правого края - 150px */
+            bottom: 0.3cm;    /* 0.3 см от низа */
+            right: 7cm;       /* 7 см от правого края */
             width: 4cm;       /* ширина 4 см */
             height: 1cm;      /* высота 1 см */
         }
