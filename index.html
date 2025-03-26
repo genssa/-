@@ -25,30 +25,33 @@
         .link {
             position: absolute;
             display: block;
-            background-color: rgba(0, 0, 0, 0); /* Прозрачный фон */
-            cursor: pointer; /* Указатель мыши */
+            background-color: rgba(0, 0, 0, 0);
+            cursor: pointer;
         }
         /* Ссылка на "BUY" */
         .buy-link {
-            top: 80%; /* Позиция сверху */
-            left: 20%; /* Позиция слева */
-            width: 10%; /* Ширина области */
-            height: 10%; /* Высота области */
+            top: 65%;    /* Изменено */
+            left: 15%;   /* Изменено */
+            width: 25%;  /* Изменено */
+            height: 20%; /* Изменено */
         }
         /* Ссылка на "JOB" */
         .job-link {
-            top: 80%; /* Позиция сверху */
-            left: 70%; /* Позиция слева */
-            width: 10%; /* Ширина области */
-            height: 10%; /* Высота области */
+            top: 65%;    /* Изменено */
+            left: 60%;   /* Изменено */
+            width: 25%;  /* Изменено */
+            height: 20%; /* Изменено */
+        }
+
+        /* Добавим подсветку для отладки */
+        .link:hover {
+            background-color: rgba(255, 0, 0, 0.2); /* Красная подсветка при наведении */
         }
     </style>
 </head>
 <body>
     <div class="image-container">
-        <!-- Ваша картинка -->
         <img src="./визитка.png" alt="Clickable Image">
-        <!-- Ссылки -->
         <a href="https://t.me/genSSA_bot" class="link buy-link" target="_blank"></a>
         <a href="https://t.me/MrGenka" class="link job-link" target="_blank"></a>
     </div>
