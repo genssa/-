@@ -16,32 +16,33 @@
         }
         .image-container {
             position: relative;
-            width: 1000px; /* фиксированная ширина контейнера */
+            width: 800px; /* Фиксированная ширина изображения */
+            height: 500px; /* Фиксированная высота изображения */
         }
         .image-container img {
-            width: 100%;
-            height: auto;
+            width: 100%; /* Изображение занимает весь контейнер */
+            height: 100%; /* Изображение занимает весь контейнер */
             display: block;
         }
         .link {
             position: absolute;
             display: block;
-            background-color: rgba(255, 0, 0, 0.2);
+            background-color: rgba(255, 0, 0, 0.2); /* Красная подсветка для проверки */
             cursor: pointer;
         }
         /* Ссылка на "BUY" */
         .buy-link {
-            bottom: 19px;
-            left: 30%;    /* процентное позиционирование от левого края */
-            width: 151px;
-            height: 38px;
+            bottom: 19px;     /* 0.5 см от низа */
+            left: calc(8cm + 150px); /* 8 см от левого края + 150px */
+            width: 4cm;       /* ширина 4 см */
+            height: 1cm;      /* высота 1 см */
         }
         /* Ссылка на "JOB" */
         .job-link {
-            bottom: 11px;
-            left: 20%;    /* процентное позиционирование от левого края */
-            width: 151px;
-            height: 38px;
+            bottom: 11px;     /* 0.3 см от низа */
+            right: calc(7cm - 150px); /* 7 см от правого края - 150px */
+            width: 4cm;       /* ширина 4 см */
+            height: 1cm;      /* высота 1 см */
         }
     </style>
 </head>
